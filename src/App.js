@@ -1,36 +1,23 @@
 import React, { Component } from 'react';
+//import Biscoito from './Biscoito'
+//import Cronometro from './Cronometro'
+import Api from './Api'
 
-class App extends Component{
-
+class App extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            feed: [
-                {id: 1, nome: 'Douglas', idade: 30},
-                {id: 2, nome: 'Priscilla', idade: 25},
-                {id: 3, nome: 'Paola', idade: 18},
-                {id: 5, nome: 'Souza', idade: 15},
-            ]
-        };
-
+        this.state = {};
     }
 
     render() {
-    return(
+        return(
             <React.Fragment>
-                {this.state.feed.map((item) => {
-                    return(
-                        <div key={item.id}>
-                            <h1>{item.nome}</h1>
-                            <h2>{item.idade}</h2>
-                            <hr/>
-                        </div>
-                    )
-                })}
+               {/* <Biscoito /> */}
+               {/* <Cronometro /> */}
+               <Api />
             </React.Fragment>
         );
     }
-
 }
 
 export default App;
