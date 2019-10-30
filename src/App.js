@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 //import Biscoito from './Biscoito'
 //import Cronometro from './Cronometro'
-import Api from './Api'
+//import Api from './Api'
+import TudoList from './components/tudolist/index'
 
 class App extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ class App extends Component {
             <React.Fragment>
                {/* <Biscoito /> */}
                {/* <Cronometro /> */}
-               <Api />
+               {/* <Api /> */}
+               <TudoList />
             </React.Fragment>
         );
     }
