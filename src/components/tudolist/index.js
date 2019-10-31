@@ -37,6 +37,11 @@ class index extends Component {
 
     deleteItem(key) {
         console.log(key);
+        let filtro = this.state.items.filter((item) => {
+            return(item.key !== key);
+        });
+
+    this.setState({items: filtro});
     }
 
     render() {
@@ -53,7 +58,7 @@ class index extends Component {
                 </form>
 
                 <button onClick={this.log}>LOG</button>
-                
+                  
                 <TudoItems lista={this.state.items} delete={this.deleteItem}/>
             </div>
         );
