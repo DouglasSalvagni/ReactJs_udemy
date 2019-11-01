@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TudoItems from './TudoItems'
+import TudoItems from './TudoItems';
 
 class index extends Component {
 
